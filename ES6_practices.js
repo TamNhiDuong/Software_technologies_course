@@ -78,6 +78,26 @@ console.log(
       )
   })('cost')
   )
+  
+//Destructuring array
+let [a, b, c] = costSpan;
+console.log(a) 
+
+//Destructuring object
+const {name, amount, span} = costs[0];
+console.log(name); //"Rent"
+
+//Falsy value?
+const isFalse = () => {
+  let value = costs[0].amount;
+  if (value.isNaN === true) {
+    console.log(value + ' not a number')
+  }
+  else {
+    console.log(value + ' is number')
+  }
+} 
+isFalse(); 
 
 
 
